@@ -53,20 +53,20 @@
                 "controlChange": {
                     "type": 7,
                     "value": 125
-                    },
-                    "delta": 0
+                },
+                "delta": 0
             }, {
                 "controlChange": {
                     "type": 10,
                     "value": 64
-                    },
-                    "delta": 0
+                },
+                "delta": 0
             }, {
                 "controlChange": {
                     "type": 91,
                     "value": 89
-                    },
-                    "delta": 0
+                },
+                "delta": 0
             }, {
                 "controlChange": {
                     "type": 93,
