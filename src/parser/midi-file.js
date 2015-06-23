@@ -258,6 +258,10 @@ MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offse
         throw new Error(`Cannot parse a midi event with a type of "${eventType.toString(16)}"`);
     }
 
+    /* jshint bitwise: false */
+    event.channel = statusByte & 0x0F;
+    /* jshint bitwise: true */
+
     return { event, offset };
 };
 
