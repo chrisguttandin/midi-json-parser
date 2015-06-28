@@ -24,6 +24,23 @@ describe('id3-parser', function () {
             });
         });
 
+        it('should parse the midi file named scale.mid', function (done) {
+            var json = require('../fixtures/scale.json');
+
+            loadFixture('scale.mid', function (err, arrayBuffer) {
+                expect(err).to.be.null;
+
+                id3Parser
+                    .parseArrayBuffer(arrayBuffer)
+                    .then(function (midiFile) {
+                        expect(midiFile).to.deep.equal(json);
+
+                        done();
+                    })
+                    .catch(done);
+            });
+        });
+
     });
 
 });

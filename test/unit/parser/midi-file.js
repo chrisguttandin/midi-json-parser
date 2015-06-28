@@ -21,6 +21,17 @@ describe('midiFileParser', function () {
             });
         });
 
+        it('should parse the midi file named scale.mid', function (done) {
+            var json = require('../../fixtures/scale.json');
+
+            loadFixture('scale.mid', function (err, arrayBuffer) {
+                expect(err).to.be.null;
+                expect(midiFileParser.parseArrayBuffer(arrayBuffer)).to.deep.equal(json);
+
+                done();
+            });
+        });
+
     });
 
 });
