@@ -1,7 +1,7 @@
 'use strict';
 
-var id3Parser = require('../../src/midi-json-parser.js'),
-    loadFixture = require('../helper/load-fixture.js');
+var loadFixture = require('../helper/load-fixture.js'),
+    midiJsonParser = require('../../src/midi-json-parser.js');
 
 describe('id3-parser', function () {
 
@@ -13,7 +13,7 @@ describe('id3-parser', function () {
             loadFixture('because.mid', function (err, arrayBuffer) {
                 expect(err).to.be.null;
 
-                id3Parser
+                midiJsonParser
                     .parseArrayBuffer(arrayBuffer)
                     .then(function (midiFile) {
                         expect(midiFile).to.deep.equal(json);
@@ -30,7 +30,7 @@ describe('id3-parser', function () {
             loadFixture('scale.mid', function (err, arrayBuffer) {
                 expect(err).to.be.null;
 
-                id3Parser
+                midiJsonParser
                     .parseArrayBuffer(arrayBuffer)
                     .then(function (midiFile) {
                         expect(midiFile).to.deep.equal(json);
