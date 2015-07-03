@@ -1,44 +1,36 @@
 'use strict';
 
-var loadFixture = require('../helper/load-fixture.js'),
+var loaders = require('../helper/load-fixture.js'),
     midiJsonParser = require('../../src/midi-json-parser.js');
 
 describe('id3-parser', function () {
 
     describe('parseArrayBuffer()', function () {
 
-        it('should parse the midi file named because.mid', function (done) {
-            var json = require('../fixtures/because.json');
+        leche.withData([
+            ['because'],
+            ['scale']
+        ], function (filename, json) {
 
-            loadFixture('because.mid', function (err, arrayBuffer) {
-                expect(err).to.be.null;
+            it('should parse the midi file', function (done) {
+                loaders.loadFixtureAsJson(filename + '.json', function (err, json) {
+                    expect(err).to.be.null;
 
-                midiJsonParser
-                    .parseArrayBuffer(arrayBuffer)
-                    .then(function (midiFile) {
-                        expect(midiFile).to.deep.equal(json);
+                    loaders.loadFixtureAsArrayBuffer(filename + '.mid', function (err, arrayBuffer) {
+                        expect(err).to.be.null;
 
-                        done();
-                    })
-                    .catch(done);
+                        midiJsonParser
+                            .parseArrayBuffer(arrayBuffer)
+                            .then(function (midiFile) {
+                                expect(midiFile).to.deep.equal(json);
+
+                                done();
+                            })
+                            .catch(done);
+                    });
+                });
             });
-        });
 
-        it('should parse the midi file named scale.mid', function (done) {
-            var json = require('../fixtures/scale.json');
-
-            loadFixture('scale.mid', function (err, arrayBuffer) {
-                expect(err).to.be.null;
-
-                midiJsonParser
-                    .parseArrayBuffer(arrayBuffer)
-                    .then(function (midiFile) {
-                        expect(midiFile).to.deep.equal(json);
-
-                        done();
-                    })
-                    .catch(done);
-            });
         });
 
     });

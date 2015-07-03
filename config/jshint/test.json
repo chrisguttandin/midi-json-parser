@@ -12,6 +12,7 @@
         "describe": false,
         "expect": false,
         "it": false,
+        "leche": false,
         "module": false,
         "require": false,
         "sinon": false

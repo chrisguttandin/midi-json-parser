@@ -19,6 +19,7 @@
     "karma-browserify": "^4.2.1",
     "karma-chrome-launcher": "^0.2.0",
     "karma-firefox-launcher": "^0.1.6",
+    "karma-leche": "0.0.0",
     "karma-mocha": "^0.2.0",
     "karma-sinon-chai": "^1.0.0",
     "load-grunt-config": "^0.17.1",

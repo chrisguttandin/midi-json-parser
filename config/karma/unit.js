@@ -37,6 +37,7 @@ module.exports = function (config) {
 
         frameworks: [
             'browserify',
+            'leche',
             'mocha',
             'sinon-chai' // implicitly uses chai too
         ],
