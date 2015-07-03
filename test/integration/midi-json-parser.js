@@ -3,7 +3,7 @@
 var loaders = require('../helper/load-fixture.js'),
     midiJsonParser = require('../../src/midi-json-parser.js');
 
-describe('id3-parser', function () {
+describe('midi-parser', function () {
 
     describe('parseArrayBuffer()', function () {
 
