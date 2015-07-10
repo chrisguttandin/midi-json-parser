@@ -1,3 +1,3 @@
 # midi-json-parser
 
-This module parses a binary MIDI file and turns it into a JSON representation.
+**This module is parsing midi files into a human-readable JSON object.**
