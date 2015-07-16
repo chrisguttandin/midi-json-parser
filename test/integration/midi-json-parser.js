@@ -31,6 +31,20 @@ describe('midi-parser', function () {
                 });
             });
 
+            it('should refuse to parse a none midi file', function (done) {
+                loaders.loadFixtureAsArrayBuffer('because.json', function (err, arrayBuffer) {
+                    expect(err).to.be.null;
+
+                    midiJsonParser
+                        .parseArrayBuffer(arrayBuffer)
+                        .catch(function (err) {
+                            expect(err.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
+
+                            done();
+                        });
+                });
+            });
+
         });
 
     });

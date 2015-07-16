@@ -47,7 +47,12 @@ module.exports = {
 
                 if (data.index === currentIndex) {
                     worker.removeEventListener('message', onMessage);
-                    resolve(data.midiFile);
+
+                    if (data.midiFile === null) {
+                        reject(new Error(data.err.message));
+                    } else {
+                        resolve(data.midiFile);
+                    }
                 }
             }
 

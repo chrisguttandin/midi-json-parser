@@ -30,10 +30,20 @@ self.addEventListener('message', function (event) {
     }
 
     if (length === data.byteLength) {
-        self.postMessage({
-            index: data.index,
-            midiFile: midiFileParser.parseArrayBuffer(arrayBuffer)
-        });
+        try {
+            self.postMessage({
+                index: data.index,
+                midiFile: midiFileParser.parseArrayBuffer(arrayBuffer)
+            });
+        } catch (err) {
+            self.postMessage({
+                err: {
+                    message: err.message
+                },
+                index: data.index,
+                midiFile: null
+            });
+        }
 
         arrayBuffers.delete(data.index);
     }
