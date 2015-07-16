@@ -14,7 +14,7 @@ module.exports = function (config) {
 
         browsers: [
             'ChromeCanary',
-            'FirefoxAurora'
+            'FirefoxDeveloper'
         ],
 
         files: [
