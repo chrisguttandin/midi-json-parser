@@ -1,7 +1,11 @@
 'use strict';
 
 var index = 0,
-    worker = new Worker('./worker/midi-json-parser.js');
+    midiJsonParserWorker = require('./worker/midi-json-parser.js'),
+    webworkify = require('webworkify'),
+    worker;
+
+worker = webworkify(midiJsonParserWorker);
 
 module.exports = {
     parseArrayBuffer: function(arrayBuffer) {

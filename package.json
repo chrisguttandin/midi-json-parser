@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "babelify": "^6.1.3",
-    "workerify": "^0.3.0"
+    "webworkify": "^1.0.2"
   },
   "description": "This module is parsing midi files into a human-readable JSON object.",
   "devDependencies": {
