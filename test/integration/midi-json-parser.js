@@ -9,7 +9,9 @@ describe('midi-parser', function () {
 
         leche.withData([
             ['because'],
-            ['scale']
+            ['scale'],
+            ['SubTractor 1'],
+            ['SubTractor 2']
         ], function (filename, json) {
 
             it('should parse the midi file', function (done) {
