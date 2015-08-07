@@ -3,7 +3,7 @@
 /**
  * This function turns a part of a given ArrayBuffer into a hexadecimal String.
  */
-module.exports = function hexify(dataView, offset, length, utf16) {
+module.exports = function hexify(dataView, offset, length) {
     var hexArray,
         uint8Array;
 
