@@ -2,8 +2,7 @@
   "author": "Christoph Guttandin",
   "browserify": {
     "transform": [
-      "babelify",
-      "workerify"
+      "babelify"
     ]
   },
   "dependencies": {
