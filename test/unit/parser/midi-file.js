@@ -18,7 +18,7 @@ describe('midiFileParser', function () {
             ['scale'],
             ['SubTractor 1'],
             ['SubTractor 2']
-        ], function (filename, json) {
+        ], function (filename) {
 
             it('should parse the midi file', function (done) {
                 loaders.loadFixtureAsJson(filename + '.json', function (err, json) {
