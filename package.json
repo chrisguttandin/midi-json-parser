@@ -37,7 +37,6 @@
   "license": "MIT",
   "main": "src/midi-json-parser.js",
   "name": "midi-json-parser",
-  "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/chrisguttandin/midi-json-parser.git"
