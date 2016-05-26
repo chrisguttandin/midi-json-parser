@@ -21,6 +21,8 @@ describe('midiFileParser', function () {
         ], function (filename) {
 
             it('should parse the midi file', function (done) {
+                this.timeout(3000);
+
                 loaders.loadFixtureAsJson(filename + '.json', function (err, json) {
                     expect(err).to.be.null;
 
