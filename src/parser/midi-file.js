@@ -248,9 +248,7 @@ MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offse
         offset += 1;
     } else if (eventType === 0x0E || (lastEvent !== null && lastEvent.pitchBend !== undefined)) {
         event = {
-            pitchBend: {
-                // @todo
-            }
+            pitchBend: dataView.getUint8(offset) | dataView.getUint8(offset + 1) << 7
         };
 
         offset += 2;
