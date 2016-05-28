@@ -168,8 +168,8 @@ MidiFileParser.prototype._parseMetaEvent = function (dataView, offset) {
 
         event = {
             keySignature: {
-				key: dataView.getInt8(offset),
-			    scale: dataView.getInt8(offset + 1)
+                key: dataView.getInt8(offset + 1),
+                scale: dataView.getInt8(offset + 2)
             }
         };
     } else {
