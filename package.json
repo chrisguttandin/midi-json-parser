@@ -2,10 +2,18 @@
   "author": "Christoph Guttandin",
   "browserify": {
     "transform": [
-      "babelify"
+      [
+        "babelify",
+        {
+          "plugins": [
+            "transform-es2015-destructuring"
+          ]
+        }
+      ]
     ]
   },
   "dependencies": {
+    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
     "webworkify": "^1.0.2"
