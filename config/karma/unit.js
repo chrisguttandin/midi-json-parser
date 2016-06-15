@@ -13,7 +13,7 @@ module.exports = function (config) {
             },
 
             files: [
-                'src/midi-json-parser.js',
+                'src/module.js',
                 {
                     included: false,
                     pattern: 'src/**/*.js',
@@ -38,7 +38,7 @@ module.exports = function (config) {
             ],
 
             preprocessors: {
-                'src/midi-json-parser.js': 'browserify',
+                'src/module.js': 'browserify',
                 'test/integration/**/*.js': 'browserify',
                 'test/unit/**/*.js': 'browserify'
             }

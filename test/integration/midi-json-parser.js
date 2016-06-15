@@ -1,7 +1,7 @@
 'use strict';
 
 var loaders = require('../helper/load-fixture.js'),
-    midiJsonParser = require('../../src/midi-json-parser.js');
+    midiJsonParser = require('../../src/module.js');
 
 describe('midi-parser', function () {
 
