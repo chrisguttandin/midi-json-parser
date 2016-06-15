@@ -1,16 +1,10 @@
 'use strict';
 
-var browserify = require('../../package.json').browserify;
-
 module.exports = function (config) {
 
     var configuration = {
 
             basePath: '../../',
-
-            browserify: {
-                transform: browserify.transform
-            },
 
             files: [
                 'src/module.js',
