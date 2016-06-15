@@ -1,5 +1,3 @@
-'use strict';
-
 var arrayBuffers = new Map(),
     midiFileParser,
     MidiFileParser = require('../parser/midi-file.js').MidiFileParser;
@@ -9,8 +7,8 @@ midiFileParser = new MidiFileParser();
 module.exports = function (self) {
     self.addEventListener('message', function (event) {
         var arrayBuffer,
-            destination,
             data = event.data,
+            destination,
             i,
             length,
             source;

@@ -1,5 +1,3 @@
-'use strict';
-
 var loaders = require('../../helper/load-fixture.js'),
     MidiFileParser = require('../../../src/parser/midi-file.js').MidiFileParser;
 
@@ -13,7 +11,7 @@ describe('midiFileParser', function () {
 
     describe('parseArrayBuffer()', function () {
 
-        leche.withData([
+        leche.withData([ // eslint-disable-line no-undef
             ['because'],
             ['scale'],
             ['SubTractor 1'],

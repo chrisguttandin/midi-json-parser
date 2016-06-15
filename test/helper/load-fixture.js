@@ -1,11 +1,9 @@
-'use strict';
-
 module.exports = {
 
     loadFixtureAsArrayBuffer: function loadFixtureAsArrayBuffer(fixture, callback) {
-        var request = new XMLHttpRequest();
+        var request = new XMLHttpRequest(); // eslint-disable-line no-undef
 
-        request.onerror = function (event) {
+        request.onerror = function () {
             callback('request-failed');
         };
         request.onload = function (event) {
@@ -17,9 +15,9 @@ module.exports = {
     },
 
     loadFixtureAsJson: function loadFixtureAsJson(fixture, callback) {
-        var request = new XMLHttpRequest();
+        var request = new XMLHttpRequest(); // eslint-disable-line no-undef
 
-        request.onerror = function (event) {
+        request.onerror = function () {
             callback('request-failed');
         };
         request.onload = function (event) {

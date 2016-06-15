@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * This function turns a part of a given ArrayBuffer into a String.
  */

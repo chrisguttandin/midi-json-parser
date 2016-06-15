@@ -1,5 +1,3 @@
-'use strict';
-
 var loaders = require('../helper/load-fixture.js'),
     midiJsonParser = require('../../src/module.js');
 
@@ -7,12 +5,12 @@ describe('midi-parser', function () {
 
     describe('parseArrayBuffer()', function () {
 
-        leche.withData([
+        leche.withData([ // eslint-disable-line no-undef
             ['because'],
             ['scale'],
             ['SubTractor 1'],
             ['SubTractor 2']
-        ], function (filename, json) {
+        ], function (filename) {
 
             it('should parse the midi file', function (done) {
                 this.timeout(3000);

@@ -1,5 +1,3 @@
-'use strict';
-
 var hexify = require('../helpers/hexify.js'),
     stringify = require('../helpers/stringify.js');
 
@@ -22,7 +20,7 @@ MidiFileParser.prototype.parseArrayBuffer = function(arrayBuffer) {
     for (i = 0; i < header.numberOfTracks; i += 1) {
         let track;
 
-        ({ offset, track } = this._parseTrackChunk(dataView, offset)); // jshint ignore: line
+        ({ offset, track } = this._parseTrackChunk(dataView, offset));
 
         tracks.push(track);
     }
@@ -30,7 +28,7 @@ MidiFileParser.prototype.parseArrayBuffer = function(arrayBuffer) {
     return {
         division: header.division,
         format: header.format,
-        tracks: tracks
+        tracks,
     };
 };
 
@@ -39,7 +37,7 @@ MidiFileParser.prototype._parseEvent = function (dataView, offset, lastEvent) {
         eventTypeByte,
         result;
 
-    ({ offset, value: delta } = this._readVariableLengthQuantity(dataView, offset)); // jshint ignore: line
+    ({ offset, value: delta } = this._readVariableLengthQuantity(dataView, offset));
 
     offset += 1;
 
@@ -64,11 +62,11 @@ MidiFileParser.prototype._parseHeaderChunk = function (dataView) {
         numberOfTracks;
 
     if (stringify(dataView, 0, 4) !== 'MThd') {
-        throw new Error(`Unexpected characters "${stringify(dataView, 0, 4)}" found instead of "MThd"`);
+        throw new Error(`Unexpected characters "${ stringify(dataView, 0, 4) }" found instead of "MThd"`);
     }
 
     if (dataView.getUint32(4) !== 6) {
-        throw new Error(`The header has an unexpected length of ${dataView.getUint32(4)} instead of 6`);
+        throw new Error(`The header has an unexpected length of ${ dataView.getUint32(4) } instead of 6`);
     }
 
     format = dataView.getUint16(8);
@@ -76,9 +74,9 @@ MidiFileParser.prototype._parseHeaderChunk = function (dataView) {
     division = dataView.getUint16(12);
 
     return {
-        division: division,
-        format: format,
-        numberOfTracks: numberOfTracks
+        division,
+        format,
+        numberOfTracks
     };
 };
 
@@ -89,7 +87,7 @@ MidiFileParser.prototype._parseMetaEvent = function (dataView, offset) {
 
     metaTypeByte = dataView.getUint8(offset);
 
-    ({ offset, value: length } = this._readVariableLengthQuantity(dataView, offset + 1)); // jshint ignore: line
+    ({ offset, value: length } = this._readVariableLengthQuantity(dataView, offset + 1));
 
     if (metaTypeByte === 0x03) {
         event = {
@@ -116,9 +114,7 @@ MidiFileParser.prototype._parseMetaEvent = function (dataView, offset) {
 
         event = {
             setTempo: {
-                /* jshint bitwise: false */
-                microsecondsPerBeat: ((dataView.getUint8(offset + 1) << 16) + (dataView.getUint8(offset + 2) << 8) + dataView.getUint8(offset + 3))
-                /* jshint bitwise: true */
+                microsecondsPerBeat: ((dataView.getUint8(offset + 1) << 16) + (dataView.getUint8(offset + 2) << 8) + dataView.getUint8(offset + 3)) // eslint-disable-line no-bitwise
             }
         };
     } else if (metaTypeByte === 0x54) {
@@ -129,25 +125,21 @@ MidiFileParser.prototype._parseMetaEvent = function (dataView, offset) {
 
         hourByte = dataView.getUint8(offset + 1);
 
-        /* jshint bitwise: false */
-        if ((hourByte & 0x60) === 0x00) {
+        if ((hourByte & 0x60) === 0x00) { // eslint-disable-line no-bitwise
             frameRate = 24;
-        } else if ((hourByte & 0x60) === 0x20) {
+        } else if ((hourByte & 0x60) === 0x20) { // eslint-disable-line no-bitwise
             frameRate = 25;
-        } else if ((hourByte & 0x60) === 0x40) {
+        } else if ((hourByte & 0x60) === 0x40) { // eslint-disable-line no-bitwise
             frameRate = 29;
-        } else if ((hourByte & 0x60) === 0x60) {
+        } else if ((hourByte & 0x60) === 0x60) { // eslint-disable-line no-bitwise
             frameRate = 30;
         }
-        /* jshint bitwise: true */
 
         event = {
             smpteOffset: {
                 frame: dataView.getUint8(offset + 4),
-                frameRate: frameRate,
-                /* jshint bitwise: false */
-                hour: hourByte & 0x1F,
-                /* jshint bitwise: true */
+                frameRate,
+                hour: hourByte & 0x1F, // eslint-disable-line no-bitwise
                 minutes: dataView.getUint8(offset + 2),
                 seconds: dataView.getUint8(offset + 3),
                 subFrame: dataView.getUint8(offset + 5)
@@ -157,9 +149,9 @@ MidiFileParser.prototype._parseMetaEvent = function (dataView, offset) {
         event = {
             timeSignature: {
                 denominator: Math.pow(2, dataView.getUint8(offset + 2)),
-				metronome: dataView.getUint8(offset + 3),
+                metronome: dataView.getUint8(offset + 3),
                 numerator: dataView.getUint8(offset + 1),
-				thirtyseconds: dataView.getUint8(offset + 4)
+                thirtyseconds: dataView.getUint8(offset + 4)
             }
         };
     } else if (metaTypeByte === 0x59) {
@@ -173,28 +165,24 @@ MidiFileParser.prototype._parseMetaEvent = function (dataView, offset) {
             }
         };
     } else {
-        throw new Error(`Cannot parse a meta event with a type of "${metaTypeByte.toString(16)}"`);
+        throw new Error(`Cannot parse a meta event with a type of "${ metaTypeByte.toString(16) }"`);
     }
 
     return {
-        event: event,
+        event,
         offset: offset + length + 1
     };
 };
 
 MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offset, lastEvent) {
     var event,
-        /* jshint bitwise: false */
-        eventType = statusByte >> 4;
-        /* jshint bitwise: true */
+        eventType = statusByte >> 4; // eslint-disable-line no-bitwise
 
-    /* jshint bitwise: false */
-    if ((statusByte & 0x80) === 0) {
+    if ((statusByte & 0x80) === 0) { // eslint-disable-line no-bitwise
         offset -= 1;
     } else {
         lastEvent = null;
     }
-    /* jshint bitwise: true */
 
     if (eventType === 0x08 || (lastEvent !== null && lastEvent.noteOff !== undefined)) {
         event = {
@@ -215,15 +203,15 @@ MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offse
         if (velocity === 0) {
             event = {
                 noteOff: {
-                    noteNumber: noteNumber,
-					velocity: velocity
+                    noteNumber,
+                    velocity
                 }
             };
         } else {
             event = {
                 noteOn: {
-                    noteNumber: noteNumber,
-					velocity: velocity
+                    noteNumber,
+                    velocity
                 }
             };
         }
@@ -233,7 +221,7 @@ MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offse
         event = {
             controlChange: {
                 type: dataView.getUint8(offset),
-			    value: dataView.getUint8(offset + 1)
+                value: dataView.getUint8(offset + 1)
             }
         };
 
@@ -248,19 +236,15 @@ MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offse
         offset += 1;
     } else if (eventType === 0x0E || (lastEvent !== null && lastEvent.pitchBend !== undefined)) {
         event = {
-            /* jshint bitwise: false */
-            pitchBend: dataView.getUint8(offset) | dataView.getUint8(offset + 1) << 7
-            /* jshint bitwise: true */
+            pitchBend: dataView.getUint8(offset) | (dataView.getUint8(offset + 1) << 7) // eslint-disable-line no-bitwise
         };
 
         offset += 2;
     } else {
-        throw new Error(`Cannot parse a midi event with a type of "${eventType.toString(16)}"`);
+        throw new Error(`Cannot parse a midi event with a type of "${ eventType.toString(16) }"`);
     }
 
-    /* jshint bitwise: false */
-    event.channel = statusByte & 0x0F;
-    /* jshint bitwise: true */
+    event.channel = statusByte & 0x0F; // eslint-disable-line no-bitwise
 
     return { event, offset };
 };
@@ -268,7 +252,7 @@ MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offse
 MidiFileParser.prototype._parseSysexEvent = function (dataView, offset) {
     var length;
 
-    ({ offset, value: length } = this._readVariableLengthQuantity(dataView, offset)); // jshint ignore: line
+    ({ offset, value: length } = this._readVariableLengthQuantity(dataView, offset));
 
     return {
         event: {
@@ -284,7 +268,7 @@ MidiFileParser.prototype._parseTrackChunk = function (dataView, offset) {
         length;
 
     if (stringify(dataView, offset, 4) !== 'MTrk') {
-        throw new Error(`Unexpected characters "${stringify(dataView, offset, 4)}" found instead of "MTrk"`);
+        throw new Error(`Unexpected characters "${ stringify(dataView, offset, 4) }" found instead of "MTrk"`);
     }
 
     event = null;
@@ -293,13 +277,13 @@ MidiFileParser.prototype._parseTrackChunk = function (dataView, offset) {
     offset += 8;
 
     while (offset < length) {
-        ({ event, offset } = this._parseEvent(dataView, offset, event)); // jshint ignore: line
+        ({ event, offset } = this._parseEvent(dataView, offset, event));
 
         events.push(event);
     }
 
     return {
-        offset: offset,
+        offset,
         track: events
     };
 };
@@ -308,23 +292,21 @@ MidiFileParser.prototype._readVariableLengthQuantity = function (dataView, offse
     var value = 0;
 
     while (true) {
-		let byte = dataView.getUint8(offset);
+        let byte = dataView.getUint8(offset);
 
-        /* jshint bitwise: false */
-    	if (byte & 0x80) {
-			value += (byte & 0x7f);
-			value <<= 7;
+        if (byte & 0x80) { // eslint-disable-line no-bitwise
+            value += (byte & 0x7f); // eslint-disable-line no-bitwise
+            value <<= 7; // eslint-disable-line no-bitwise
             offset += 1;
-		} else {
+        } else {
             value += byte;
 
-			return {
+            return {
                 offset,
                 value
             };
-		}
-        /* jshint bitwise: true */
-	}
+        }
+    }
 };
 
 module.exports.MidiFileParser = MidiFileParser;

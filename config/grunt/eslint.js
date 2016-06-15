@@ -3,31 +3,24 @@
 module.exports = {
     config: {
         options: {
-            jshintrc: 'config/jshint/config.json'
+            configFile: 'config/eslint/config.json'
         },
         src: [
+            '*.js',
             'config/**/*.js'
         ]
     },
     src: {
         options: {
-            jshintrc: 'config/jshint/src.json'
+            configFile: 'config/eslint/src.json'
         },
         src: [
             'src/**/*.js'
         ]
     },
-    root: {
-        options: {
-            jshintrc: 'config/jshint/root.json'
-        },
-        src: [
-            '*.js'
-        ]
-    },
     test: {
         options: {
-            jshintrc: 'config/jshint/test.json'
+            configFile: 'config/eslint/test.json'
         },
         src: [
             'test/**/*.js'

@@ -1,5 +1,3 @@
-'use strict';
-
 var index = 0,
     midiJsonParserWorker = require('./worker/midi-json-parser.js'),
     webworkify = require('webworkify'),
@@ -8,7 +6,7 @@ var index = 0,
 worker = webworkify(midiJsonParserWorker);
 
 module.exports = {
-    parseArrayBuffer: function(arrayBuffer) {
+    parseArrayBuffer (arrayBuffer) {
         var currentIndex = index;
 
         index += 1;
@@ -21,7 +19,7 @@ module.exports = {
 
                 worker.postMessage({
                     arrayBuffer: slice,
-                    byteIndex: byteIndex,
+                    byteIndex,
                     byteLength: arrayBuffer.byteLength,
                     index: currentIndex
                 }, [
@@ -36,7 +34,7 @@ module.exports = {
 
                 worker.postMessage({
                     arrayBuffer: slice,
-                    byteIndex: byteIndex,
+                    byteIndex,
                     byteLength: arrayBuffer.byteLength,
                     index: currentIndex
                 }, [
