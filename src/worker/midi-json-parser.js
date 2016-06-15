@@ -1,50 +1,46 @@
-var arrayBuffers = new Map(),
-    midiFileParser,
-    MidiFileParser = require('../parser/midi-file.js').MidiFileParser;
+import { parseArrayBuffer } from '../parser/midi-file';
 
-midiFileParser = new MidiFileParser();
+const arrayBuffers = new Map();
 
-module.exports = function (self) {
-    self.addEventListener('message', function (event) {
-        var arrayBuffer,
-            data = event.data,
+export default (self) => {
+    self.addEventListener('message', ({ data: { arrayBuffer, byteIndex, byteLength, index } }) => {
+        var completeArrayBuffer,
             destination,
-            i,
             length,
             source;
 
-        arrayBuffer = arrayBuffers.get(data.index);
+        completeArrayBuffer = arrayBuffers.get(index);
 
-        if (arrayBuffer === undefined) {
-            arrayBuffer = new ArrayBuffer(data.byteLength);
-            arrayBuffers.set(data.index, arrayBuffer);
+        if (completeArrayBuffer === undefined) {
+            completeArrayBuffer = new ArrayBuffer(byteLength);
+            arrayBuffers.set(index, completeArrayBuffer);
         }
 
-        destination = new Uint8Array(arrayBuffer);
-        length = Math.min(data.byteIndex + 1048576, data.byteLength);
-        source = new Uint8Array(data.arrayBuffer);
+        destination = new Uint8Array(completeArrayBuffer);
+        length = Math.min(byteIndex + 1048576, byteLength);
+        source = new Uint8Array(arrayBuffer);
 
-        for (i = data.byteIndex; i < length; i += 1) {
-            destination[i] = source[i - data.byteIndex];
+        for (let i = byteIndex; i < length; i += 1) {
+            destination[i] = source[i - byteIndex];
         }
 
-        if (length === data.byteLength) {
+        if (length === byteLength) {
             try {
                 self.postMessage({
-                    index: data.index,
-                    midiFile: midiFileParser.parseArrayBuffer(arrayBuffer)
+                    index,
+                    midiFile: parseArrayBuffer(completeArrayBuffer)
                 });
             } catch (err) {
                 self.postMessage({
                     err: {
                         message: err.message
                     },
-                    index: data.index,
+                    index,
                     midiFile: null
                 });
             }
 
-            arrayBuffers.delete(data.index);
+            arrayBuffers.delete(index);
         }
     });
 };

@@ -1,13 +1,7 @@
-var loaders = require('../../helper/load-fixture.js'),
-    MidiFileParser = require('../../../src/parser/midi-file.js').MidiFileParser;
+import * as midiFileParser from '../../../src/parser/midi-file';
+import { loadFixtureAsArrayBuffer, loadFixtureAsJson } from '../../helper/load-fixture';
 
 describe('midiFileParser', function () {
-
-    var midiFileParser;
-
-    beforeEach(function () {
-        midiFileParser = new MidiFileParser();
-    });
 
     describe('parseArrayBuffer()', function () {
 
@@ -21,10 +15,10 @@ describe('midiFileParser', function () {
             it('should parse the midi file', function (done) {
                 this.timeout(3000);
 
-                loaders.loadFixtureAsJson(filename + '.json', function (err, json) {
+                loadFixtureAsJson(filename + '.json', function (err, json) {
                     expect(err).to.be.null;
 
-                    loaders.loadFixtureAsArrayBuffer(filename + '.mid', function (err, arrayBuffer) {
+                    loadFixtureAsArrayBuffer(filename + '.mid', function (err, arrayBuffer) {
                         expect(err).to.be.null;
 
                         expect(midiFileParser.parseArrayBuffer(arrayBuffer)).to.deep.equal(json);
@@ -35,7 +29,7 @@ describe('midiFileParser', function () {
             });
 
             it('should refuse to parse a none midi file', function (done) {
-                loaders.loadFixtureAsArrayBuffer(filename + '.json', function (err, arrayBuffer) {
+                loadFixtureAsArrayBuffer(filename + '.json', function (err, arrayBuffer) {
                     expect(err).to.be.null;
 
                     expect(function () {

@@ -1,5 +1,5 @@
-var loaders = require('../helper/load-fixture.js'),
-    midiJsonParser = require('../../src/module.js');
+import { loadFixtureAsArrayBuffer, loadFixtureAsJson } from '../helper/load-fixture';
+import { parseArrayBuffer } from '../../src/module';
 
 describe('midi-parser', function () {
 
@@ -15,14 +15,13 @@ describe('midi-parser', function () {
             it('should parse the midi file', function (done) {
                 this.timeout(3000);
 
-                loaders.loadFixtureAsJson(filename + '.json', function (err, json) {
+                loadFixtureAsJson(filename + '.json', function (err, json) {
                     expect(err).to.be.null;
 
-                    loaders.loadFixtureAsArrayBuffer(filename + '.mid', function (err, arrayBuffer) {
+                    loadFixtureAsArrayBuffer(filename + '.mid', function (err, arrayBuffer) {
                         expect(err).to.be.null;
 
-                        midiJsonParser
-                            .parseArrayBuffer(arrayBuffer)
+                        parseArrayBuffer(arrayBuffer)
                             .then(function (midiFile) {
                                 expect(midiFile).to.deep.equal(json);
 
@@ -34,11 +33,10 @@ describe('midi-parser', function () {
             });
 
             it('should refuse to parse a none midi file', function (done) {
-                loaders.loadFixtureAsArrayBuffer(filename + '.json', function (err, arrayBuffer) {
+                loadFixtureAsArrayBuffer(filename + '.json', function (err, arrayBuffer) {
                     expect(err).to.be.null;
 
-                    midiJsonParser
-                        .parseArrayBuffer(arrayBuffer)
+                    parseArrayBuffer(arrayBuffer)
                         .catch(function (err) {
                             expect(err.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
 

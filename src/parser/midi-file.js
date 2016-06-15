@@ -1,26 +1,23 @@
-var hexify = require('../helpers/hexify.js'),
-    stringify = require('../helpers/stringify.js');
+import { hexify } from '../helpers/hexify';
+import { stringify } from '../helpers/stringify';
 
-function MidiFileParser () {}
-
-MidiFileParser.prototype.parseArrayBuffer = function(arrayBuffer) {
+export const parseArrayBuffer = (arrayBuffer) => {
     var dataView,
         header,
-        i,
         offset,
         tracks;
 
     dataView = new DataView(arrayBuffer);
 
-    header = this._parseHeaderChunk(dataView);
+    header = _parseHeaderChunk(dataView);
 
     offset = 14;
     tracks = [];
 
-    for (i = 0; i < header.numberOfTracks; i += 1) {
+    for (let i = 0, length = header.numberOfTracks; i < length; i += 1) {
         let track;
 
-        ({ offset, track } = this._parseTrackChunk(dataView, offset));
+        ({ offset, track } = _parseTrackChunk(dataView, offset));
 
         tracks.push(track);
     }
@@ -32,23 +29,23 @@ MidiFileParser.prototype.parseArrayBuffer = function(arrayBuffer) {
     };
 };
 
-MidiFileParser.prototype._parseEvent = function (dataView, offset, lastEvent) {
+const _parseEvent = (dataView, offset, lastEvent) => {
     var delta,
         eventTypeByte,
         result;
 
-    ({ offset, value: delta } = this._readVariableLengthQuantity(dataView, offset));
+    ({ offset, value: delta } = _readVariableLengthQuantity(dataView, offset));
 
     offset += 1;
 
     eventTypeByte = dataView.getUint8(offset);
 
     if (eventTypeByte === 0xF0) {
-        result = this._parseSysexEvent(dataView, offset + 1);
+        result = _parseSysexEvent(dataView, offset + 1);
     } else if (eventTypeByte === 0xFF) {
-        result = this._parseMetaEvent(dataView, offset + 1);
+        result = _parseMetaEvent(dataView, offset + 1);
     } else {
-        result = this._parseMidiEvent(eventTypeByte, dataView, offset + 1, lastEvent);
+        result = _parseMidiEvent(eventTypeByte, dataView, offset + 1, lastEvent);
     }
 
     result.event.delta = delta;
@@ -56,7 +53,7 @@ MidiFileParser.prototype._parseEvent = function (dataView, offset, lastEvent) {
     return result;
 };
 
-MidiFileParser.prototype._parseHeaderChunk = function (dataView) {
+const _parseHeaderChunk = (dataView) => {
     var division,
         format,
         numberOfTracks;
@@ -80,14 +77,14 @@ MidiFileParser.prototype._parseHeaderChunk = function (dataView) {
     };
 };
 
-MidiFileParser.prototype._parseMetaEvent = function (dataView, offset) {
+const _parseMetaEvent = (dataView, offset) => {
     var event,
         length,
         metaTypeByte;
 
     metaTypeByte = dataView.getUint8(offset);
 
-    ({ offset, value: length } = this._readVariableLengthQuantity(dataView, offset + 1));
+    ({ offset, value: length } = _readVariableLengthQuantity(dataView, offset + 1));
 
     if (metaTypeByte === 0x03) {
         event = {
@@ -174,7 +171,7 @@ MidiFileParser.prototype._parseMetaEvent = function (dataView, offset) {
     };
 };
 
-MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offset, lastEvent) {
+const _parseMidiEvent = (statusByte, dataView, offset, lastEvent) => {
     var event,
         eventType = statusByte >> 4; // eslint-disable-line no-bitwise
 
@@ -249,10 +246,10 @@ MidiFileParser.prototype._parseMidiEvent = function (statusByte, dataView, offse
     return { event, offset };
 };
 
-MidiFileParser.prototype._parseSysexEvent = function (dataView, offset) {
+const _parseSysexEvent = (dataView, offset) => {
     var length;
 
-    ({ offset, value: length } = this._readVariableLengthQuantity(dataView, offset));
+    ({ offset, value: length } = _readVariableLengthQuantity(dataView, offset));
 
     return {
         event: {
@@ -262,7 +259,7 @@ MidiFileParser.prototype._parseSysexEvent = function (dataView, offset) {
     };
 };
 
-MidiFileParser.prototype._parseTrackChunk = function (dataView, offset) {
+const _parseTrackChunk = (dataView, offset) => {
     var event,
         events,
         length;
@@ -277,7 +274,7 @@ MidiFileParser.prototype._parseTrackChunk = function (dataView, offset) {
     offset += 8;
 
     while (offset < length) {
-        ({ event, offset } = this._parseEvent(dataView, offset, event));
+        ({ event, offset } = _parseEvent(dataView, offset, event));
 
         events.push(event);
     }
@@ -288,7 +285,7 @@ MidiFileParser.prototype._parseTrackChunk = function (dataView, offset) {
     };
 };
 
-MidiFileParser.prototype._readVariableLengthQuantity = function (dataView, offset) {
+const _readVariableLengthQuantity = (dataView, offset) => {
     var value = 0;
 
     while (true) {
@@ -308,5 +305,3 @@ MidiFileParser.prototype._readVariableLengthQuantity = function (dataView, offse
         }
     }
 };
-
-module.exports.MidiFileParser = MidiFileParser;

@@ -1,66 +1,60 @@
-var index = 0,
-    midiJsonParserWorker = require('./worker/midi-json-parser.js'),
-    webworkify = require('webworkify'),
-    worker;
+import midiJsonParserWorker from './worker//midi-json-parser';
+import webworkify from 'webworkify';
 
-worker = webworkify(midiJsonParserWorker);
+const worker = webworkify(midiJsonParserWorker);
 
-module.exports = {
-    parseArrayBuffer (arrayBuffer) {
-        var currentIndex = index;
+var index = 0;
 
-        index += 1;
+export const parseArrayBuffer = (arrayBuffer) => {
+    var currentIndex = index;
 
-        function transferSlice(byteIndex) {
-            var slice;
+    index += 1;
 
-            if (byteIndex + 1048576 < arrayBuffer.byteLength) {
-                slice = arrayBuffer.slice(byteIndex, byteIndex + 1048576);
+    const transferSlice = (byteIndex) => {
+        var slice;
 
-                worker.postMessage({
-                    arrayBuffer: slice,
-                    byteIndex,
-                    byteLength: arrayBuffer.byteLength,
-                    index: currentIndex
-                }, [
-                    slice
-                ]);
+        if (byteIndex + 1048576 < arrayBuffer.byteLength) {
+            slice = arrayBuffer.slice(byteIndex, byteIndex + 1048576);
 
-                setTimeout(function () {
-                    transferSlice(byteIndex + 1048576);
-                });
-            } else {
-                slice = arrayBuffer.slice(byteIndex);
+            worker.postMessage({
+                arrayBuffer: slice,
+                byteIndex,
+                byteLength: arrayBuffer.byteLength,
+                index: currentIndex
+            }, [
+                slice
+            ]);
 
-                worker.postMessage({
-                    arrayBuffer: slice,
-                    byteIndex,
-                    byteLength: arrayBuffer.byteLength,
-                    index: currentIndex
-                }, [
-                    slice
-                ]);
+            setTimeout(() => transferSlice(byteIndex + 1048576));
+        } else {
+            slice = arrayBuffer.slice(byteIndex);
+
+            worker.postMessage({
+                arrayBuffer: slice,
+                byteIndex,
+                byteLength: arrayBuffer.byteLength,
+                index: currentIndex
+            }, [
+                slice
+            ]);
+        }
+    }
+
+    return new Promise((resolve, reject) => {
+        const onMessage = ({ data }) => {
+            if (data.index === currentIndex) {
+                worker.removeEventListener('message', onMessage);
+
+                if (data.midiFile === null) {
+                    reject(new Error(data.err.message));
+                } else {
+                    resolve(data.midiFile);
+                }
             }
         }
 
-        return new Promise(function (resolve, reject) {
-            function onMessage(event) {
-                var data = event.data;
+        worker.addEventListener('message', onMessage);
 
-                if (data.index === currentIndex) {
-                    worker.removeEventListener('message', onMessage);
-
-                    if (data.midiFile === null) {
-                        reject(new Error(data.err.message));
-                    } else {
-                        resolve(data.midiFile);
-                    }
-                }
-            }
-
-            worker.addEventListener('message', onMessage);
-
-            transferSlice(0);
-        });
-    }
+        transferSlice(0);
+    });
 };

@@ -6,7 +6,8 @@
         "babelify",
         {
           "plugins": [
-            "transform-es2015-destructuring"
+            "transform-es2015-destructuring",
+            "transform-es2015-modules-commonjs"
           ]
         }
       ]
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
     "webworkify": "^1.3.0"

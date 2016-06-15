@@ -1,7 +1,7 @@
 /**
  * This function turns a part of a given ArrayBuffer into a String.
  */
-module.exports = function stringify(dataView, offset, length) {
+export const stringify = (dataView, offset, length) => {
     var array;
 
     if (arguments.length < 2) {
