@@ -22,7 +22,7 @@
   },
   "description": "This module is parsing midi files into a human-readable JSON object.",
   "devDependencies": {
-    "babel-eslint": "^6.0.4",
+    "babel-eslint": "^6.1.0",
     "chai": "^3.5.0",
     "eslint-config-holy-grail": "^4.0.0",
     "grunt": "^1.0.1",
