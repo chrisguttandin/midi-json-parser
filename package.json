@@ -13,6 +13,9 @@
       ]
     ]
   },
+  "bugs": {
+    "url": "https://github.com/chrisguttandin/midi-json-parser/issues"
+  },
   "dependencies": {
     "babel-plugin-transform-es2015-destructuring": "^6.9.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
