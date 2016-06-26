@@ -38,7 +38,7 @@
     "karma-chrome-launcher": "^1.0.1",
     "karma-firefox-launcher": "^1.0.0",
     "karma-leche": "0.0.6",
-    "karma-mocha": "^1.0.1",
+    "karma-mocha": "^1.1.0",
     "karma-sauce-launcher": "^1.0.0",
     "karma-sinon-chai": "^1.0.0",
     "load-grunt-config": "^0.19.2",
