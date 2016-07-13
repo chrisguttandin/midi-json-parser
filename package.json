@@ -34,7 +34,7 @@
     "grunt-karma": "^2.0.0",
     "gruntify-eslint": "^2.0.0",
     "karma": "^1.1.1",
-    "karma-browserify": "^5.0.5",
+    "karma-browserify": "^5.1.0",
     "karma-chrome-launcher": "^1.0.1",
     "karma-firefox-launcher": "^1.0.0",
     "karma-leche": "0.0.6",
