@@ -7,6 +7,8 @@ module.exports = function (config) {
 
             basePath: '../../',
 
+            browserNoActivityTimeout: 20000,
+
             files: [
                 'src/module.js',
                 {
