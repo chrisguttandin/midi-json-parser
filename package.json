@@ -44,7 +44,7 @@
     "load-grunt-config": "^0.19.2",
     "lolex": "^1.5.0",
     "mocha": "^2.2.5",
-    "sinon": "^1.17.4",
+    "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0",
     "watchify": "^3.7.0"
   },
