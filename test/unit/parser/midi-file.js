@@ -29,6 +29,8 @@ describe('midiFileParser', function () {
             });
 
             it('should refuse to parse a none midi file', function (done) {
+                this.timeout(4000);
+
                 loadFixtureAsArrayBuffer(filename + '.json', function (err, arrayBuffer) {
                     expect(err).to.be.null;
 
