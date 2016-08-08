@@ -1,26 +1,15 @@
 /**
  * This function turns a part of a given ArrayBuffer into a hexadecimal String.
  */
-export const hexify = (dataView, offset, length) => {
+export const hexify = (dataView, offset = 0, length = dataView.byteLength - (offset - dataView.byteOffset)) => {
     var hexArray,
         uint8Array;
 
-    if (arguments.length < 2) {
-        offset = dataView.byteOffset;
-    } else {
-        offset += dataView.byteOffset;
-    }
-
-    if (arguments.length < 3) {
-        length = dataView.byteLength - (offset - dataView.byteOffset);
-    }
-
+    hexArray = [];
+    offset += dataView.byteOffset;
     uint8Array = new Uint8Array(dataView.buffer, offset, length);
 
-    hexArray = [];
-    length = uint8Array.length;
-
-    for (let i = 0; i < length; i += 1) {
+    for (let i = 0, length = uint8Array.length; i < length; i += 1) {
         let hex = uint8Array[i].toString(16).toUpperCase();
 
         if (hex.length === 1) {
