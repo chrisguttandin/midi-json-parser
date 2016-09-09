@@ -31,7 +31,7 @@ module.exports = function (config) {
                 'browserify',
                 'leche',
                 'mocha',
-                'sinon-chai' // implicitly uses chai too
+                'sinon-chai'
             ],
 
             preprocessors: {
