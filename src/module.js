@@ -38,7 +38,7 @@ export const parseArrayBuffer = (arrayBuffer) => {
                 slice
             ]);
         }
-    }
+    };
 
     return new Promise((resolve, reject) => {
         const onMessage = ({ data }) => {
@@ -51,7 +51,7 @@ export const parseArrayBuffer = (arrayBuffer) => {
                     resolve(data.midiFile);
                 }
             }
-        }
+        };
 
         worker.addEventListener('message', onMessage);
 
