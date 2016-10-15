@@ -25,7 +25,7 @@ export const parseArrayBuffer = (arrayBuffer) => {
     return {
         division: header.division,
         format: header.format,
-        tracks,
+        tracks
     };
 };
 
