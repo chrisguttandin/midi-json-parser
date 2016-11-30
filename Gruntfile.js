@@ -1,8 +1,6 @@
-'use strict';
+const loadGruntConfig = require('load-grunt-config');
 
-var loadGruntConfig = require('load-grunt-config');
-
-module.exports = function (grunt) {
+module.exports = (grunt) => {
 
     loadGruntConfig(grunt, {
         configPath: process.cwd() + '/config/grunt'

@@ -1,28 +1,28 @@
 import { loadFixtureAsArrayBuffer, loadFixtureAsJson } from '../helper/load-fixture';
 import { parseArrayBuffer } from '../../src/module';
 
-describe('midi-parser', function () {
+describe('midi-json-parser', () => {
 
-    describe('parseArrayBuffer()', function () {
+    describe('parseArrayBuffer()', () => {
 
         leche.withData([ // eslint-disable-line no-undef
             ['because'],
             ['scale'],
             ['SubTractor 1'],
             ['SubTractor 2']
-        ], function (filename) {
+        ], (filename) => {
 
             it('should parse the midi file', function (done) {
                 this.timeout(6000);
 
-                loadFixtureAsJson(filename + '.json', function (err, json) {
+                loadFixtureAsJson(filename + '.json', (err, json) => {
                     expect(err).to.be.null;
 
-                    loadFixtureAsArrayBuffer(filename + '.mid', function (err, arrayBuffer) {
+                    loadFixtureAsArrayBuffer(filename + '.mid', (err, arrayBuffer) => {
                         expect(err).to.be.null;
 
                         parseArrayBuffer(arrayBuffer)
-                            .then(function (midiFile) {
+                            .then((midiFile) => {
                                 expect(midiFile).to.deep.equal(json);
 
                                 done();
@@ -35,11 +35,11 @@ describe('midi-parser', function () {
             it('should refuse to parse a none midi file', function (done) {
                 this.timeout(6000);
 
-                loadFixtureAsArrayBuffer(filename + '.json', function (err, arrayBuffer) {
+                loadFixtureAsArrayBuffer(filename + '.json', (err, arrayBuffer) => {
                     expect(err).to.be.null;
 
                     parseArrayBuffer(arrayBuffer)
-                        .catch(function (err) {
+                        .catch((err) => {
                             expect(err.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
 
                             done();
