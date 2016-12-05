@@ -1,7 +1,7 @@
 import { loadFixtureAsArrayBuffer, loadFixtureAsJson } from '../helper/load-fixture';
 import { parseArrayBuffer } from '../../src/module';
 
-describe('midi-json-parser', () => {
+describe('module', () => {
 
     describe('parseArrayBuffer()', () => {
 
