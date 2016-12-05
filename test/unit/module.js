@@ -5,7 +5,7 @@ describe('module', () => {
 
     describe('parseArrayBuffer()', () => {
 
-        leche.withData([ // eslint-disable-line no-undef
+        leche.withData([
             ['because'],
             ['scale'],
             ['SubTractor 1'],
