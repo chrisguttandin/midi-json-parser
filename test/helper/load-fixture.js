@@ -1,5 +1,5 @@
 export const loadFixtureAsArrayBuffer = (fixture, callback) => {
-    var request = new XMLHttpRequest();
+    const request = new XMLHttpRequest();
 
     request.onerror = function () {
         callback('request-failed');
@@ -13,7 +13,7 @@ export const loadFixtureAsArrayBuffer = (fixture, callback) => {
 };
 
 export const loadFixtureAsJson = (fixture, callback) => {
-    var request = new XMLHttpRequest();
+    const request = new XMLHttpRequest();
 
     request.onerror = function () {
         callback('request-failed');
