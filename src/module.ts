@@ -1,5 +1,5 @@
-import { worker } from './worker/worker';
 import { load } from 'midi-json-parser-broker';
+import { worker } from './worker/worker';
 
 const blob: Blob = new Blob([ worker ], { type: 'application/javascript' });
 
