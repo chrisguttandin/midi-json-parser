@@ -4,7 +4,7 @@
     "url": "https://github.com/chrisguttandin/midi-json-parser/issues"
   },
   "dependencies": {
-    "midi-json-parser-broker": "0.0.2",
+    "midi-json-parser-broker": "0.0.3",
     "midi-json-parser-worker": "0.0.3"
   },
   "description": "This module is parsing midi files into a human-readable JSON object.",
