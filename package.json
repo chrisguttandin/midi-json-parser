@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "midi-json-parser-broker": "0.0.4",
-    "midi-json-parser-worker": "0.0.6"
+    "midi-json-parser-worker": "0.0.7"
   },
   "description": "This module is parsing midi files into a human-readable JSON object.",
   "devDependencies": {
