@@ -6,10 +6,10 @@ describe('module', () => {
     describe('parseArrayBuffer()', () => {
 
         leche.withData([
-            ['because'],
-            ['scale'],
-            ['SubTractor 1'],
-            ['SubTractor 2']
+            [ 'because' ],
+            [ 'scale' ],
+            [ 'SubTractor 1' ],
+            [ 'SubTractor 2' ]
         ], (filename) => {
 
             it('should parse the midi file', function (done) {
