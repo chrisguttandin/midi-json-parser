@@ -1,5 +1,5 @@
 import { loadFixtureAsArrayBuffer, loadFixtureAsJson } from '../helper/load-fixture';
-import { parseArrayBuffer } from '../../src/module';
+import { parseArrayBuffer } from '../../src/module';
 
 describe('module', () => {
 
