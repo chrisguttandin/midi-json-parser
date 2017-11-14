@@ -15,7 +15,7 @@ installed by running the following command:
 npm install midi-json-parser
 ```
 
-Once the module is installed you can use its one and only function as show in the example below:
+Once the module is installed you can use its one and only function as shown in the example below:
 
 ```js
 import { parseArrayBuffer } from 'midi-json-parser';
@@ -29,7 +29,7 @@ parseArrayBuffer(arrayBuffer)
     });
 ```
 
-In case you are comfortable with TypeScript this is the interface which describes the JSON
+In case you are comfortable with TypeScript, this is the interface which describes the JSON
 representation:
 
 ```typescript
