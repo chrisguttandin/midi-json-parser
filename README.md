@@ -8,6 +8,61 @@
 
 This module parses a binary MIDI file and turns it into a JSON representation.
 
+This module is available on [npm](https://www.npmjs.com/package/midi-json-parser) and can be
+installed by running the following command:
+
+```shell
+npm install midi-json-parser
+```
+
+Once the module is installed you can use its one and only function as show in the example below:
+
+```js
+import { parseArrayBuffer } from 'midi-json-parser';
+
+// Let's assume there is an ArrayBuffer called arrayBuffer which contains the binary content of a
+// MIDI file.
+
+parseArrayBuffer(arrayBuffer)
+    .then((json) => {
+        // json is the JSON representation of the MIDI file.
+    });
+```
+
+In case you are comfortable with TypeScript this is the interface which describes the JSON
+representation:
+
+```typescript
+interface IMidiFile {
+
+    division: number;
+
+    format: number;
+
+    tracks: TMidiEvent[][];
+
+}
+```
+
+The type
+[`TMidiEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/types/midi-event.ts)
+is a union of all possible MIDI events. Here is the complete list of all MIDI events this module can handle:
+
+- [`IMidiChannelPrefixEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-channel-prefix-event.ts)
+- [`IMidiControlChangeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-control-change-event.ts)
+- [`IMidiEndOfTrackEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-end-of-track-event.ts)
+- [`IMidiKeySignatureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-key-signature-event.ts)
+- [`IMidiMidiPortEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-midi-port-event.ts)
+- [`IMidiNoteOffEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-note-off-event.ts)
+- [`IMidiNoteOnEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-note-on-event.ts)
+- [`IMidiPitchBendEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-pitch-bend-event.ts)
+- [`IMidiProgramChangeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-program-change-event.ts)
+- [`IMidiSetTempoEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-set-tempo-event.ts)
+- [`IMidiSmpteOffsetEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-smpte-offset-event.ts)
+- [`IMidiSysexEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-sysex-event.ts)
+- [`IMidiTimeSignatureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-time-signature-event.ts)
+- [`IMidiTrackNameEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-track-name-event.ts)
+
 Developing this module wouldn't have been possible without all the great resources out there. The
 following list tries to mention a few of them:
 
