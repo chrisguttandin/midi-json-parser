@@ -6,7 +6,13 @@
 [![dependencies](https://img.shields.io/david/chrisguttandin/midi-json-parser.svg?style=flat-square)](https://www.npmjs.com/package/midi-json-parser)
 [![version](https://img.shields.io/npm/v/midi-json-parser.svg?style=flat-square)](https://www.npmjs.com/package/midi-json-parser)
 
-This module parses a binary MIDI file and turns it into a JSON representation.
+This module parses a binary MIDI file and turns it into a JSON representation. This JSON
+representation can then be used to pass it on to the
+[midi-player](https://github.com/chrisguttandin/midi-player). It can of course also be modified
+to be encoded as binary MIDI file at some point again by using the
+[json-midi-encoder](https://github.com/chrisguttandin/json-midi-encoder).
+
+## Usage
 
 This module is available on [npm](https://www.npmjs.com/package/midi-json-parser) and can be
 installed by running the following command:
@@ -64,6 +70,8 @@ is a union of all possible MIDI events. Here is the complete list of all MIDI ev
 - [`IMidiTextEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-text-event.ts)
 - [`IMidiTimeSignatureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-time-signature-event.ts)
 - [`IMidiTrackNameEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-track-name-event.ts)
+
+## Acknowledgement
 
 Developing this module wouldn't have been possible without all the great resources out there. The
 following list tries to mention a few of them:
