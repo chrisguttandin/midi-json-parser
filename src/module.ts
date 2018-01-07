@@ -8,4 +8,8 @@ const url: string = URL.createObjectURL(blob);
 
 const midiJsonParser = load(url);
 
+export const connect = midiJsonParser.connect;
+
+export const disconnect = midiJsonParser.disconnect;
+
 export const parseArrayBuffer: (arrayBuffer: ArrayBuffer) => Promise<IMidiFile> = midiJsonParser.parseArrayBuffer;
