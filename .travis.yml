@@ -11,5 +11,5 @@ env:
     - secure: BUiUbL61PpCUK7/E/BGf0Q/VUs0DCBm6MLtlLEucNBmyEsBdrWkBM8JUzQWHy3JcCohQW3yjQ8vHXfcCSlduSlS4W0DVnItS587GnPvxlr8R2UmSUIs2/0eoN9xb7gDpZlTu6JTZg1xAlNTbTlbPHW+X0LgKjBZd3v2aA/vMyDBklkOAW8F2SgUTgq1FIsjFs4Gg1GSABMaYyFaUZpD04r2jWpNrc9q/OFNkAPFbb400yhpM1ZakoESFgkft0H2YUK3QaR4t+az/F7Jzonw0Dims7Ppw5X2e0RXyQo2cSWoZ9P0a4aSMkyUwSGfZgV6kUQm3Eu0+AQt8p9Drn6icDNesce5+U8xkS5kNpeZ7L3jCHAfT+3G3JjsKAz6I0CbfQJk3aQxP3CFXkVrsEbh2+OHcqRiYRmkPT/2XZHtvltrgr6WGQRIpoUMU6D49XjKJodcWxN/q9rZjUS0kgIsqcdq5SAh5p8cATYeL8EWp/lAN6cWb/XFG9jmcaCWYXP89ccu8ux01w833Zg3Avvi0Bl+FuMdavwkD8Mq2YmDwdoKwgQsM7cXH0zroFt9nB1K98CAWJCH+BJTMhqMKtEYwctkOfqxr+TV9r5wU2G/IoHggmxHoB5RX/CzkYfABUkQ1o6d4Dr+PUX/shYr6h8gs2i9UQAMg/gity6C8IaZXBxo=
 install: npm ci || (rm -rf node_modules && npm install)
 language: node_js
-node_js: 9
+node_js: 10
 sudo: false
