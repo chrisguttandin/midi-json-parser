@@ -11,7 +11,7 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "midi-json-parser-broker": "^2.0.40",
-    "midi-json-parser-worker": "^4.0.20",
+    "midi-json-parser-worker": "^4.0.21",
     "tslib": "^1.9.1"
   },
   "description": "This module is parsing midi files into a human-readable JSON object.",
