@@ -44,8 +44,8 @@ describe('module', () => {
                 loadFixtureAsJson(filename + '.json', (err, json) => {
                     expect(err).to.be.null;
 
-                    loadFixtureAsArrayBuffer(filename + '.mid', (err, arrayBuffer) => {
-                        expect(err).to.be.null;
+                    loadFixtureAsArrayBuffer(filename + '.mid', (rr, arrayBuffer) => {
+                        expect(rr).to.be.null;
 
                         parseArrayBuffer(arrayBuffer)
                             .then((midiFile) => {
@@ -65,8 +65,8 @@ describe('module', () => {
                     expect(err).to.be.null;
 
                     parseArrayBuffer(arrayBuffer)
-                        .catch((err) => {
-                            expect(err.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
+                        .catch((rr) => {
+                            expect(rr.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
 
                             done();
                         });
