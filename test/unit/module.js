@@ -65,8 +65,8 @@ describe('module', () => {
                     expect(err).to.be.null;
 
                     parseArrayBuffer(arrayBuffer)
-                        .catch((rr) => {
-                            expect(rr.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
+                        .catch((err2) => {
+                            expect(err2.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
 
                             done();
                         });
