@@ -13,3 +13,5 @@ export const connect = midiJsonParser.connect;
 export const disconnect = midiJsonParser.disconnect;
 
 export const parseArrayBuffer: (arrayBuffer: ArrayBuffer) => Promise<IMidiFile> = midiJsonParser.parseArrayBuffer;
+
+URL.revokeObjectURL(url);
