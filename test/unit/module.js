@@ -1,4 +1,4 @@
-import { connect, disconnect, parseArrayBuffer } from '../../src/module';
+import { connect, disconnect, isSupported, parseArrayBuffer } from '../../src/module';
 import { loadFixtureAsArrayBuffer, loadFixtureAsJson } from '../helper/load-fixture';
 
 describe('module', () => {
@@ -23,6 +23,14 @@ describe('module', () => {
 
         it('should disconnect a port', () => {
             return disconnect(port);
+        });
+
+    });
+
+    describe('isSupported()', () => {
+
+        it('should export a function', () => {
+            expect(isSupported).to.be.a('function');
         });
 
     });

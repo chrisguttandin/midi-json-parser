@@ -11,6 +11,8 @@ export const connect = midiJsonParser.connect;
 
 export const disconnect = midiJsonParser.disconnect;
 
+export const isSupported = midiJsonParser.isSupported;
+
 export const parseArrayBuffer = midiJsonParser.parseArrayBuffer;
 
 URL.revokeObjectURL(url);
