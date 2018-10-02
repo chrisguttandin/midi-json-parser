@@ -7,7 +7,7 @@ export default {
     mode: 'production',
     module: {
         rules: [ {
-            exclude: /node_modules/,
+            exclude: /node_modules\/(?!dashify)/,
             test: /\.js$/,
             use: {
                 loader: 'babel-loader',
