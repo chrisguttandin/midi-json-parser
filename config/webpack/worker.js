@@ -1,1 +1,1 @@
-import 'web-audio-beat-detector-worker';
+import 'midi-json-parser-worker';
