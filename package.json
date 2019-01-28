@@ -73,6 +73,9 @@
       "pre-commit": "grunt lint"
     }
   },
+  "keywords": [
+    "MIDI"
+  ],
   "license": "MIT",
   "main": "build/es5/bundle.js",
   "module": "build/es2018/module.js",
