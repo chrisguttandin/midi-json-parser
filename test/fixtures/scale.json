@@ -6,12 +6,14 @@
             {
                 "delta": 0,
                 "trackName": "scale"
-            }, {
+            },
+            {
                 "delta": 0,
                 "setTempo": {
                     "microsecondsPerBeat": 500000
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "timeSignature": {
                     "denominator": 4,
@@ -19,1219 +21,1394 @@
                     "numerator": 4,
                     "thirtyseconds": 8
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "trackName": "scale"
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 36,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 36,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 37,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 37,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 38,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 38,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 39,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 39,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 40,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 40,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 41,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 41,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 42,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 42,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 43,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 43,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 44,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 44,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 45,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 45,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 46,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 46,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 47,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 47,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 48,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 48,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 49,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 49,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 50,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 50,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 51,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 51,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 52,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 52,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 53,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 53,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 54,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 54,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 55,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 55,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 56,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 56,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 57,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 57,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 58,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 58,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 59,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 59,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 60,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 60,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 61,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 61,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 62,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 62,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 63,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 63,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 64,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 64,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 65,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 65,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 66,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 66,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 67,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 67,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 68,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 68,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 69,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 69,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 70,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 70,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 71,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 71,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 72,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 72,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 73,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 73,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 74,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 74,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 75,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 75,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 36,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 1920,
                 "noteOff": {
                     "noteNumber": 36,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 48,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 1920,
                 "noteOff": {
                     "noteNumber": 48,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 72,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 1920,
                 "noteOff": {
                     "noteNumber": 72,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 36,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 36,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 37,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 37,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 38,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 38,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 39,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 39,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 40,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 40,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 41,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 41,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 42,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 42,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 43,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 43,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 44,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 44,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 45,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 45,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 46,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 46,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 47,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 47,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 48,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 48,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 49,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 49,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 50,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 50,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 51,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 51,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 52,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 52,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 53,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 53,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 54,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 54,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 55,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 55,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 56,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 56,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 57,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 57,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 58,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 58,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 59,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 59,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 60,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 60,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 61,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 61,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 62,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 62,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 63,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 63,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 64,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 64,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 65,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 65,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 66,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 66,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 67,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 67,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 68,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 68,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 69,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 69,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 70,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 70,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 71,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 71,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 72,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 72,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 73,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 73,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 74,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 74,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 75,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 240,
                 "noteOff": {
                     "noteNumber": 75,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 36,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 1920,
                 "noteOff": {
                     "noteNumber": 36,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 48,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 1920,
                 "noteOff": {
                     "noteNumber": 48,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 72,
                     "velocity": 100
                 }
-            }, {
+            },
+            {
                 "channel": 0,
                 "delta": 1920,
                 "noteOff": {
                     "noteNumber": 72,
                     "velocity": 64
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }

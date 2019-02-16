@@ -6,231 +6,272 @@
             {
                 "delta": 0,
                 "text": "A complete scale"
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "text": "c"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 5
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 48,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 48,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "text": "d"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 5
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 50,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 50,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "text": "e"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 5
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 52,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 52,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "text": "f"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 5
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 53,
                     "velocity": 89
                 }
-            },  {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 53,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "text": "g"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 5
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 55,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 55,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "text": "a"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 5
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 57,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 57,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "text": "b"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 5
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 59,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 59,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
-        ], [
+        ],
+        [
             {
                 "delta": 0,
                 "text": "c"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 5
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 60,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 60,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }

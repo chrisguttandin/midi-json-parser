@@ -6,115 +6,135 @@
             {
                 "delta": 0,
                 "text": "Hello karaoke"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "programChange": {
                     "programNumber": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "lyric": "He"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 86,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 64,
                 "noteOff": {
                     "noteNumber": 86,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 64,
                 "lyric": "llo"
-            }, {
-                 "channel": 1,
-                 "delta": 0,
+            },
+            {
+                "channel": 1,
+                "delta": 0,
                 "noteOn": {
                     "noteNumber": 96,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 95,
                 "noteOff": {
                     "noteNumber": 96,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "lyric": "\\Ka"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 93,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 64,
                 "noteOff": {
                     "noteNumber": 93,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "lyric": "ra"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 84,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 64,
                 "noteOff": {
                     "noteNumber": 84,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "lyric": "o"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 88,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 64,
                 "noteOff": {
                     "noteNumber": 88,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "lyric": "ke"
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 0,
                 "noteOn": {
                     "noteNumber": 95,
                     "velocity": 121
                 }
-            }, {
+            },
+            {
                 "channel": 1,
                 "delta": 64,
                 "noteOff": {
                     "noteNumber": 95,
                     "velocity": 0
                 }
-            }, {
+            },
+            {
                 "delta": 0,
                 "endOfTrack": true
             }
