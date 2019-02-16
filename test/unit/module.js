@@ -39,11 +39,14 @@ describe('module', () => {
 
         leche.withData([
             [ 'because' ],
-            [ 'scale' ],
             [ 'MIDIOkFormat1-lyrics' ],
             [ 'MIDIOkFormat2' ],
+            [ 'minute_waltz' ],
+            [ 'rachmaninov3' ],
+            [ 'scale' ],
             [ 'SubTractor 1' ],
-            [ 'SubTractor 2' ]
+            [ 'SubTractor 2' ],
+            [ 'test8bars' ]
         ], (filename) => {
 
             it('should parse the midi file', function (done) {

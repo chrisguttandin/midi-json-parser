@@ -1,0 +1,1741 @@
+{
+    "division": 480,
+    "format": 0,
+    "tracks": [
+        [
+            {
+                "delta": 0,
+                "trackName": "Inst 1"
+            },
+            {
+                "delta": 0,
+                "instrumentName": "Steinway Grand Piano"
+            },
+            {
+                "delta": 0,
+                "timeSignature": {
+                    "denominator": 4,
+                    "metronome": 24,
+                    "numerator": 4,
+                    "thirtyseconds": 8
+                }
+            },
+            {
+                "delta": 0,
+                "keySignature": {
+                    "key": 0,
+                    "scale": 0
+                }
+            },
+            {
+                "delta": 0,
+                "smpteOffset": {
+                    "frame": 0,
+                    "frameRate": 25,
+                    "hour": 1,
+                    "minutes": 0,
+                    "seconds": 0,
+                    "subFrame": 0
+                }
+            },
+            {
+                "delta": 0,
+                "setTempo": {
+                    "microsecondsPerBeat": 500000
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 4,
+                "noteOn": {
+                    "noteNumber": 36,
+                    "velocity": 72
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 34
+                },
+                "delta": 135
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 80
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "delta": 294,
+                "noteOff": {
+                    "noteNumber": 36,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 15,
+                "noteOn": {
+                    "noteNumber": 43,
+                    "velocity": 55
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 52,
+                "noteOff": {
+                    "noteNumber": 43,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 82
+                },
+                "delta": 190
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 36
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 58,
+                    "velocity": 77
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 9,
+                "noteOn": {
+                    "noteNumber": 72,
+                    "velocity": 74
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 14,
+                "noteOn": {
+                    "noteNumber": 53,
+                    "velocity": 41
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 65,
+                    "velocity": 58
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 9,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 64
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 14,
+                "noteOn": {
+                    "noteNumber": 48,
+                    "velocity": 35
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 54
+                },
+                "delta": 352
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 116
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 130,
+                "noteOff": {
+                    "noteNumber": 53,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 15,
+                "noteOff": {
+                    "noteNumber": 48,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 60,
+                "noteOff": {
+                    "noteNumber": 58,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 47,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 34,
+                "noteOff": {
+                    "noteNumber": 65,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOff": {
+                    "noteNumber": 72,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 491,
+                "noteOn": {
+                    "noteNumber": 60,
+                    "velocity": 61
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 70
+                },
+                "delta": 3
+            },
+            {
+                "channel": 0,
+                "delta": 0,
+                "noteOn": {
+                    "noteNumber": 70,
+                    "velocity": 64
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 74,
+                    "velocity": 63
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 55,
+                    "velocity": 61
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 0,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 47
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 5,
+                "noteOn": {
+                    "noteNumber": 50,
+                    "velocity": 50
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 16
+                },
+                "delta": 3
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 9
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 56
+                },
+                "delta": 543
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 318,
+                "noteOff": {
+                    "noteNumber": 60,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 43,
+                "noteOff": {
+                    "noteNumber": 55,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 61,
+                "noteOff": {
+                    "noteNumber": 50,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 31,
+                "noteOff": {
+                    "noteNumber": 70,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 21,
+                "noteOff": {
+                    "noteNumber": 74,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 17,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 108
+                },
+                "delta": 776
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 60
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 20
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 43,
+                "noteOn": {
+                    "noteNumber": 79,
+                    "velocity": 51
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 70,
+                    "velocity": 55
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 9,
+                "noteOn": {
+                    "noteNumber": 36,
+                    "velocity": 57
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 12,
+                "noteOn": {
+                    "noteNumber": 43,
+                    "velocity": 59
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 5,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 41
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 48,
+                    "velocity": 44
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 14
+                },
+                "delta": 110
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 78
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOff": {
+                    "noteNumber": 36,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 32,
+                "noteOff": {
+                    "noteNumber": 43,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 28,
+                "noteOff": {
+                    "noteNumber": 48,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 211,
+                "noteOff": {
+                    "noteNumber": 70,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 38,
+                "noteOff": {
+                    "noteNumber": 79,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 37,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 208,
+                "noteOn": {
+                    "noteNumber": 58,
+                    "velocity": 71
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 0,
+                "noteOn": {
+                    "noteNumber": 72,
+                    "velocity": 61
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOn": {
+                    "noteNumber": 79,
+                    "velocity": 51
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 51
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 125
+                },
+                "delta": 5
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOn": {
+                    "noteNumber": 53,
+                    "velocity": 57
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 82
+                },
+                "delta": 6
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOn": {
+                    "noteNumber": 48,
+                    "velocity": 43
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 24
+                },
+                "delta": 6
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 46
+                },
+                "delta": 196
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 98
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 44,
+                "noteOff": {
+                    "noteNumber": 53,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 26,
+                "noteOff": {
+                    "noteNumber": 48,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 0,
+                "noteOff": {
+                    "noteNumber": 58,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 337,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 9,
+                "noteOff": {
+                    "noteNumber": 72,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 32,
+                "noteOff": {
+                    "noteNumber": 79,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 254,
+                "noteOn": {
+                    "noteNumber": 74,
+                    "velocity": 53
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 59
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 5,
+                "noteOn": {
+                    "noteNumber": 60,
+                    "velocity": 59
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 50,
+                    "velocity": 52
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 0,
+                "noteOn": {
+                    "noteNumber": 55,
+                    "velocity": 57
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 100
+                },
+                "delta": 9
+            },
+            {
+                "channel": 0,
+                "delta": 9,
+                "noteOn": {
+                    "noteNumber": 79,
+                    "velocity": 48
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 54
+                },
+                "delta": 2
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 2
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 54
+                },
+                "delta": 230
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 120
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "delta": 747,
+                "noteOff": {
+                    "noteNumber": 60,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 18,
+                "noteOff": {
+                    "noteNumber": 55,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 31,
+                "noteOff": {
+                    "noteNumber": 50,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 24,
+                "noteOff": {
+                    "noteNumber": 79,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 8,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 29,
+                "noteOff": {
+                    "noteNumber": 74,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 733,
+                "noteOn": {
+                    "noteNumber": 43,
+                    "velocity": 61
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 120
+                },
+                "delta": 104
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 66
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 18
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "delta": 92,
+                "noteOff": {
+                    "noteNumber": 43,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 17,
+                "noteOn": {
+                    "noteNumber": 36,
+                    "velocity": 83
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 38
+                },
+                "delta": 99
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 82
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 9
+            },
+            {
+                "channel": 0,
+                "delta": 245,
+                "noteOff": {
+                    "noteNumber": 36,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 358,
+                "noteOn": {
+                    "noteNumber": 58,
+                    "velocity": 77
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 23,
+                "noteOn": {
+                    "noteNumber": 53,
+                    "velocity": 53
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 48,
+                    "velocity": 53
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 72
+                },
+                "delta": 18
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 2
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 50
+                },
+                "delta": 161
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 103
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 145,
+                "noteOff": {
+                    "noteNumber": 53,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 23,
+                "noteOn": {
+                    "noteNumber": 65,
+                    "velocity": 53
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOff": {
+                    "noteNumber": 48,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 20,
+                "noteOff": {
+                    "noteNumber": 58,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 95,
+                "noteOff": {
+                    "noteNumber": 65,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 136,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 103
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 123
+                },
+                "delta": 118
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 113
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 103
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 9,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 88
+                },
+                "delta": 3
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 68
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 42
+                },
+                "delta": 13
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 2
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 40,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 72
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 18,
+                "noteOn": {
+                    "noteNumber": 60,
+                    "velocity": 71
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 55,
+                    "velocity": 68
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 50,
+                    "velocity": 66
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 16
+                },
+                "delta": 202
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 80
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "delta": 534,
+                "noteOff": {
+                    "noteNumber": 60,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 29,
+                "noteOff": {
+                    "noteNumber": 55,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 69,
+                "noteOff": {
+                    "noteNumber": 50,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 72,
+                "noteOn": {
+                    "noteNumber": 55,
+                    "velocity": 66
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 46,
+                "noteOff": {
+                    "noteNumber": 55,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 67,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 124,
+                "noteOn": {
+                    "noteNumber": 70,
+                    "velocity": 94
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 109,
+                "noteOff": {
+                    "noteNumber": 70,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 100
+                },
+                "delta": 44
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 52
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 12
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "delta": 60,
+                "noteOn": {
+                    "noteNumber": 72,
+                    "velocity": 105
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 107,
+                "noteOff": {
+                    "noteNumber": 72,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 124,
+                "noteOn": {
+                    "noteNumber": 72,
+                    "velocity": 103
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 121,
+                "noteOn": {
+                    "noteNumber": 74,
+                    "velocity": 84
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOff": {
+                    "noteNumber": 72,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 61,
+                "noteOn": {
+                    "noteNumber": 43,
+                    "velocity": 55
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 104,
+                "noteOff": {
+                    "noteNumber": 74,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 2,
+                "noteOn": {
+                    "noteNumber": 70,
+                    "velocity": 72
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 116,
+                "noteOff": {
+                    "noteNumber": 70,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 60,
+                "noteOff": {
+                    "noteNumber": 43,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 26,
+                "noteOn": {
+                    "noteNumber": 36,
+                    "velocity": 72
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 13,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 76
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 22
+                },
+                "delta": 31
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 106
+                },
+                "delta": 9
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 170,
+                "noteOff": {
+                    "noteNumber": 36,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 9,
+                "noteOn": {
+                    "noteNumber": 43,
+                    "velocity": 38
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 58,
+                "noteOff": {
+                    "noteNumber": 43,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 144,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 309,
+                "noteOn": {
+                    "noteNumber": 70,
+                    "velocity": 76
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 123
+                },
+                "delta": 3
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 79,
+                    "velocity": 72
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 58,
+                    "velocity": 81
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 82
+                },
+                "delta": 5
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 26
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOn": {
+                    "noteNumber": 48,
+                    "velocity": 59
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 6
+            },
+            {
+                "channel": 0,
+                "delta": 0,
+                "noteOn": {
+                    "noteNumber": 53,
+                    "velocity": 55
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 48
+                },
+                "delta": 231
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 125
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "delta": 124,
+                "noteOff": {
+                    "noteNumber": 48,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 0,
+                "noteOff": {
+                    "noteNumber": 53,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 14,
+                "noteOff": {
+                    "noteNumber": 58,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 29,
+                "noteOff": {
+                    "noteNumber": 70,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 29,
+                "noteOff": {
+                    "noteNumber": 79,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 120
+                },
+                "delta": 413
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 90
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 50
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 8
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 12
+            },
+            {
+                "channel": 0,
+                "delta": 43,
+                "noteOn": {
+                    "noteNumber": 77,
+                    "velocity": 59
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 60,
+                    "velocity": 50
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 50,
+                    "velocity": 46
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 9,
+                "noteOn": {
+                    "noteNumber": 72,
+                    "velocity": 61
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 2,
+                "noteOn": {
+                    "noteNumber": 55,
+                    "velocity": 59
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOn": {
+                    "noteNumber": 67,
+                    "velocity": 51
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 60
+                },
+                "delta": 76
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 127
+                },
+                "delta": 11
+            },
+            {
+                "channel": 0,
+                "delta": 26,
+                "noteOff": {
+                    "noteNumber": 67,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 0,
+                "noteOff": {
+                    "noteNumber": 72,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 20,
+                "noteOff": {
+                    "noteNumber": 60,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 3,
+                "noteOff": {
+                    "noteNumber": 77,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOff": {
+                    "noteNumber": 50,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "delta": 6,
+                "noteOff": {
+                    "noteNumber": 55,
+                    "velocity": 0
+                }
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 78
+                },
+                "delta": 1815
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 14
+                },
+                "delta": 13
+            },
+            {
+                "channel": 0,
+                "controlChange": {
+                    "type": 64,
+                    "value": 0
+                },
+                "delta": 11
+            },
+            {
+                "delta": 0,
+                "endOfTrack": true
+            }
+        ]
+    ]
+}
