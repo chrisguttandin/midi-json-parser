@@ -66,6 +66,7 @@ is a union of all possible MIDI events. Here is the complete list of all MIDI ev
 - [`IMidiNoteOnEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-note-on-event.ts)
 - [`IMidiPitchBendEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-pitch-bend-event.ts)
 - [`IMidiProgramChangeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-program-change-event.ts)
+- [`IMidiSequencerSpecificEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-sequencer-specific-event.ts)
 - [`IMidiSetTempoEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-set-tempo-event.ts)
 - [`IMidiSmpteOffsetEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-smpte-offset-event.ts)
 - [`IMidiSysexEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-sysex-event.ts)
