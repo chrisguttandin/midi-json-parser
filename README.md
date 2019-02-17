@@ -56,6 +56,7 @@ is a union of all possible MIDI events. Here is the complete list of all MIDI ev
 
 - [`IMidiChannelPrefixEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-channel-prefix-event.ts)
 - [`IMidiControlChangeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-control-change-event.ts)
+- [`IMidiCopyrightNoticeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-copyright-notice-event.ts)
 - [`IMidiEndOfTrackEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-end-of-track-event.ts)
 - [`IMidiKeySignatureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-key-signature-event.ts)
 - [`IMidiLyricEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-lyric-event.ts)
