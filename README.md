@@ -58,6 +58,7 @@ is a union of all possible MIDI events. Here is the complete list of all MIDI ev
 - [`IMidiControlChangeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-control-change-event.ts)
 - [`IMidiCopyrightNoticeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-copyright-notice-event.ts)
 - [`IMidiEndOfTrackEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-end-of-track-event.ts)
+- [`IMidiInstrumentNameEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-instrument-name-event.ts)
 - [`IMidiKeySignatureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-key-signature-event.ts)
 - [`IMidiLyricEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-lyric-event.ts)
 - [`IMidiMidiPortEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-midi-port-event.ts)
