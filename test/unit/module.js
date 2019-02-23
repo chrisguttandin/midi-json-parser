@@ -38,6 +38,7 @@ describe('module', () => {
     describe('parseArrayBuffer()', () => {
 
         leche.withData([
+            [ 'A_F_NO7_01' ],
             [ 'because' ],
             [ 'MIDIOkFormat1-lyrics' ],
             [ 'MIDIOkFormat2' ],
