@@ -13,6 +13,7 @@ export const disconnect = midiJsonParser.disconnect;
 
 export const isSupported = midiJsonParser.isSupported;
 
-export const parseArrayBuffer = midiJsonParser.parseArrayBuffer;
+// @todo Remove type annotation when possible.
+export const parseArrayBuffer: typeof midiJsonParser.parseArrayBuffer = midiJsonParser.parseArrayBuffer;
 
 URL.revokeObjectURL(url);
