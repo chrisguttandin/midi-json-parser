@@ -39,14 +39,15 @@ describe('module', () => {
 
         leche.withData([
             [ 'A_F_NO7_01' ],
-            [ 'because' ],
             [ 'MIDIOkFormat1-lyrics' ],
             [ 'MIDIOkFormat2' ],
+            [ 'SubTractor 1' ],
+            [ 'SubTractor 2' ],
+            [ 'TheEntertainer' ],
+            [ 'because' ],
             [ 'minute_waltz' ],
             [ 'rachmaninov3' ],
             [ 'scale' ],
-            [ 'SubTractor 1' ],
-            [ 'SubTractor 2' ],
             [ 'test' ],
             [ 'test8bars' ]
         ], (filename) => {
