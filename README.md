@@ -55,6 +55,7 @@ The type
 is a union of all possible MIDI events. Here is the complete list of all MIDI events this module can handle:
 
 - [`IMidiChannelPrefixEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-channel-prefix-event.ts)
+- [`IMidiChannelPressureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-channel-pressure-event.ts)
 - [`IMidiControlChangeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-control-change-event.ts)
 - [`IMidiCopyrightNoticeEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-copyright-notice-event.ts)
 - [`IMidiDeviceNameEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-device-name-event.ts)
