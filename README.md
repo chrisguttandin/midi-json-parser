@@ -76,6 +76,7 @@ is a union of all possible MIDI events. Here is the complete list of all MIDI ev
 - [`IMidiTextEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-text-event.ts)
 - [`IMidiTimeSignatureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-time-signature-event.ts)
 - [`IMidiTrackNameEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-track-name-event.ts)
+- [`IMidiUnknownTextEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-unknown-text-event.ts)
 
 ## Acknowledgement
 
