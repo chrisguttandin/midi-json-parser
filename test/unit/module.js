@@ -46,6 +46,7 @@ describe('module', () => {
             [ 'SubTractor 2' ],
             [ 'TheEntertainer' ],
             [ 'because' ],
+            [ 'californication' ],
             [ 'minute_waltz' ],
             [ 'rachmaninov3' ],
             [ 'scale' ],
