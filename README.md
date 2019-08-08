@@ -61,6 +61,7 @@ is a union of all possible MIDI events. Here is the complete list of all MIDI ev
 - [`IMidiDeviceNameEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-device-name-event.ts)
 - [`IMidiEndOfTrackEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-end-of-track-event.ts)
 - [`IMidiInstrumentNameEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-instrument-name-event.ts)
+- [`IMidiKeyPressureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-key-pressure-event.ts)
 - [`IMidiKeySignatureEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-key-signature-event.ts)
 - [`IMidiLyricEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-lyric-event.ts)
 - [`IMidiMarkerEvent`](https://github.com/chrisguttandin/midi-json-parser-worker/blob/master/src/interfaces/midi-marker-event.ts)
