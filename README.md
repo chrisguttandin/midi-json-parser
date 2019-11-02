@@ -4,7 +4,7 @@
 
 [![tests](https://img.shields.io/travis/chrisguttandin/midi-json-parser/master.svg?style=flat-square)](https://travis-ci.org/chrisguttandin/midi-json-parser)
 [![dependencies](https://img.shields.io/david/chrisguttandin/midi-json-parser.svg?style=flat-square)](https://www.npmjs.com/package/midi-json-parser)
-[![version](https://img.shields.io/npm/v/midi-json-parser.svg?style=flat-square)](https://www.npmjs.com/package/midi-json-parser)
+[![version](https://img.shields.io/npm/v/midi-json-parser.svg?style=flat-square)](https://www.npmjs.com/package/midi-json-parser) [![Greenkeeper badge](https://badges.greenkeeper.io/chrisguttandin/midi-json-parser.svg)](https://greenkeeper.io/)
 
 This module parses a binary MIDI file and turns it into a JSON representation. This JSON
 representation can then be used to pass it on to the
