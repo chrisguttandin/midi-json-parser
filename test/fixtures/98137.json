@@ -32,85 +32,85 @@
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 499999
+                    "microsecondsPerQuarter": 499999
                 },
                 "delta": 0
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 428756
+                    "microsecondsPerQuarter": 428756
                 },
                 "delta": 0
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 300129
+                    "microsecondsPerQuarter": 300129
                 },
                 "delta": 8192
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 500215
+                    "microsecondsPerQuarter": 500215
                 },
                 "delta": 65536
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 428756
+                    "microsecondsPerQuarter": 428756
                 },
                 "delta": 192512
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 428756
+                    "microsecondsPerQuarter": 428756
                 },
                 "delta": 32768
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 750323
+                    "microsecondsPerQuarter": 750323
                 },
                 "delta": 204800
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 428756
+                    "microsecondsPerQuarter": 428756
                 },
                 "delta": 4096
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 500215
+                    "microsecondsPerQuarter": 500215
                 },
                 "delta": 163840
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 428756
+                    "microsecondsPerQuarter": 428756
                 },
                 "delta": 98304
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 370530
+                    "microsecondsPerQuarter": 370530
                 },
                 "delta": 188416
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 600258
+                    "microsecondsPerQuarter": 600258
                 },
                 "delta": 221184
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 400172
+                    "microsecondsPerQuarter": 400172
                 },
                 "delta": 217088
             },
             {
                 "setTempo": {
-                    "microsecondsPerBeat": 545689
+                    "microsecondsPerQuarter": 545689
                 },
                 "delta": 24576
             },

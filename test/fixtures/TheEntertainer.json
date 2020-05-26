@@ -31,7 +31,7 @@
             {
                 "delta": 0,
                 "setTempo": {
-                    "microsecondsPerBeat": 833333
+                    "microsecondsPerQuarter": 833333
                 }
             },
             {
