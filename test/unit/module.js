@@ -2,105 +2,89 @@ import { connect, disconnect, isSupported, parseArrayBuffer } from '../../src/mo
 import { loadFixtureAsArrayBuffer, loadFixtureAsJson } from '../helper/load-fixture';
 
 describe('module', () => {
-
     describe('connect()', () => {
-
         it('should connect a port', () => {
-            return connect()
-                .then((port) => {
-                    expect(port).to.be.an.instanceOf(MessagePort);
-                });
+            return connect().then((port) => {
+                expect(port).to.be.an.instanceOf(MessagePort);
+            });
         });
-
     });
 
     describe('disconnect()', () => {
-
         let port;
 
-        beforeEach(() => connect()
-            .then((prt) => port = prt));
+        beforeEach(() => connect().then((prt) => (port = prt)));
 
         it('should disconnect a port', () => {
             return disconnect(port);
         });
-
     });
 
     describe('isSupported()', () => {
-
         it('should export a function', () => {
             expect(isSupported).to.be.a('function');
         });
-
     });
 
     describe('parseArrayBuffer()', () => {
+        leche.withData(
+            [
+                ['98137'],
+                ['A_F_NO7_01'],
+                ['MIDIOkFormat1-lyrics'],
+                ['MIDIOkFormat2'],
+                ['SubTractor 1'],
+                ['SubTractor 2'],
+                ['TheEntertainer'],
+                ['because'],
+                ['californication'],
+                ['minute_waltz'],
+                ['rachmaninov3'],
+                ['scale'],
+                ['test'],
+                ['test8bars']
+            ],
+            (filename) => {
+                describe('with a midi file', () => {
+                    let arrayBuffer;
+                    let json;
 
-        leche.withData([
-            [ '98137' ],
-            [ 'A_F_NO7_01' ],
-            [ 'MIDIOkFormat1-lyrics' ],
-            [ 'MIDIOkFormat2' ],
-            [ 'SubTractor 1' ],
-            [ 'SubTractor 2' ],
-            [ 'TheEntertainer' ],
-            [ 'because' ],
-            [ 'californication' ],
-            [ 'minute_waltz' ],
-            [ 'rachmaninov3' ],
-            [ 'scale' ],
-            [ 'test' ],
-            [ 'test8bars' ]
-        ], (filename) => {
+                    beforeEach(async function () {
+                        this.timeout(6000);
 
-            describe('with a midi file', () => {
+                        arrayBuffer = await loadFixtureAsArrayBuffer(`${filename}.mid`);
+                        json = await loadFixtureAsJson(`${filename}.json`);
+                    });
 
-                let arrayBuffer;
-                let json;
+                    it('should parse the file', async function () {
+                        this.timeout(6000);
 
-                beforeEach(async function () {
-                    this.timeout(6000);
+                        const midiFile = await parseArrayBuffer(arrayBuffer);
 
-                    arrayBuffer = await loadFixtureAsArrayBuffer(`${ filename }.mid`);
-                    json = await loadFixtureAsJson(`${ filename }.json`);
+                        expect(midiFile).to.deep.equal(json);
+                    });
                 });
 
-                it('should parse the file', async function () {
-                    this.timeout(6000);
+                describe('with a json file', () => {
+                    let arrayBuffer;
 
-                    const midiFile = await parseArrayBuffer(arrayBuffer);
+                    beforeEach(async function () {
+                        this.timeout(6000);
 
-                    expect(midiFile).to.deep.equal(json);
-                });
+                        arrayBuffer = await loadFixtureAsArrayBuffer(`${filename}.json`);
+                    });
 
-            });
+                    it('should refuse to parse the file', function (done) {
+                        this.timeout(6000);
 
-            describe('with a json file', () => {
-
-                let arrayBuffer;
-
-                beforeEach(async function () {
-                    this.timeout(6000);
-
-                    arrayBuffer = await loadFixtureAsArrayBuffer(`${ filename }.json`);
-                });
-
-                it('should refuse to parse the file', function (done) {
-                    this.timeout(6000);
-
-                    parseArrayBuffer(arrayBuffer)
-                        .catch((err) => {
+                        parseArrayBuffer(arrayBuffer).catch((err) => {
                             expect(err.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
 
                             done();
                         });
+                    });
                 });
-
-            });
-
-        });
-
+            }
+        );
     });
-
 });
