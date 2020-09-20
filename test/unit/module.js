@@ -50,14 +50,14 @@ describe('module', () => {
                     let json;
 
                     beforeEach(async function () {
-                        this.timeout(6000);
+                        this.timeout(20000);
 
                         arrayBuffer = await loadFixtureAsArrayBuffer(`${filename}.mid`);
                         json = await loadFixtureAsJson(`${filename}.json`);
                     });
 
                     it('should parse the file', async function () {
-                        this.timeout(6000);
+                        this.timeout(20000);
 
                         const midiFile = await parseArrayBuffer(arrayBuffer);
 
@@ -69,13 +69,13 @@ describe('module', () => {
                     let arrayBuffer;
 
                     beforeEach(async function () {
-                        this.timeout(6000);
+                        this.timeout(20000);
 
                         arrayBuffer = await loadFixtureAsArrayBuffer(`${filename}.json`);
                     });
 
                     it('should refuse to parse the file', function (done) {
-                        this.timeout(6000);
+                        this.timeout(20000);
 
                         parseArrayBuffer(arrayBuffer).catch((err) => {
                             expect(err.message).to.equal('Unexpected characters "{\n  " found instead of "MThd"');
