@@ -6,7 +6,7 @@ module.exports = (config) => {
 
         browserDisconnectTimeout: 100000,
 
-        browserNoActivityTimeout: 20000,
+        browserNoActivityTimeout: 100000,
 
         files: [
             {
