@@ -33,6 +33,7 @@ describe('module', () => {
                 ['A_F_NO7_01'],
                 ['MIDIOkFormat1-lyrics'],
                 ['MIDIOkFormat2'],
+                ['MorozovS07'],
                 ['SubTractor 1'],
                 ['SubTractor 2'],
                 ['TheEntertainer'],
