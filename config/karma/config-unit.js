@@ -94,6 +94,10 @@ module.exports = (config) => {
                     captureTimeout: 300,
                     platform: 'OS X 10.15'
                 }
+            },
+
+            sauceLabs: {
+                recordVideo: false
             }
         });
     } else {
