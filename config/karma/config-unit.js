@@ -14,14 +14,14 @@ module.exports = (config) => {
         files: [
             {
                 included: false,
-                pattern: 'test/fixtures/**',
-                served: true,
-                watched: false
+                pattern: 'src/**',
+                served: false,
+                watched: true
             },
             {
                 included: false,
-                pattern: 'src/**',
-                served: false,
+                pattern: 'test/fixtures/**',
+                served: true,
                 watched: true
             },
             'test/unit/**/*.js'
@@ -80,19 +80,19 @@ module.exports = (config) => {
                     base: 'SauceLabs',
                     browserName: 'chrome',
                     captureTimeout: 300,
-                    platform: 'OS X 10.15'
+                    platform: 'macOS 11.00'
                 },
                 FirefoxSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'firefox',
                     captureTimeout: 300,
-                    platform: 'OS X 10.15'
+                    platform: 'macOS 11.00'
                 },
                 SafariSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'safari',
                     captureTimeout: 300,
-                    platform: 'OS X 10.15'
+                    platform: 'macOS 11.00'
                 }
             },
 
