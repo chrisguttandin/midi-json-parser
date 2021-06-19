@@ -67,12 +67,6 @@
         "src/"
     ],
     "homepage": "https://github.com/chrisguttandin/midi-json-parser",
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint --edit --extends @commitlint/config-angular",
-            "pre-commit": "pretty-quick --config config/prettier/config.json --staged && grunt lint"
-        }
-    },
     "keywords": [
         "MIDI"
     ],
@@ -85,6 +79,7 @@
         "url": "https://github.com/chrisguttandin/midi-json-parser.git"
     },
     "scripts": {
+        "prepare": "husky install",
         "prepublishOnly": "grunt build",
         "test": "grunt lint && grunt test"
     },
