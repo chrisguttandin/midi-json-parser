@@ -20,6 +20,9 @@ module.exports = (grunt) => {
         },
         'test-unit': {
             cmd: `karma start config/karma/config-unit.js ${continuous ? '--concurrency Infinity' : '--single-run'}`
+        },
+        'webpack': {
+            cmd: `webpack --config config/webpack/worker-es2019.js`
         }
     };
 };
