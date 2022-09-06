@@ -4,11 +4,7 @@
 
 [![version](https://img.shields.io/npm/v/midi-json-parser.svg?style=flat-square)](https://www.npmjs.com/package/midi-json-parser)
 
-This module parses a binary MIDI file and turns it into a JSON representation. This JSON
-representation can then be used to pass it on to the
-[midi-player](https://github.com/chrisguttandin/midi-player). It can of course also be modified
-to be encoded as binary MIDI file at some point again by using the
-[json-midi-encoder](https://github.com/chrisguttandin/json-midi-encoder).
+This module parses a binary MIDI file and turns it into a JSON representation. This JSON representation can then for example be used to pass it on to the [midi-player](https://github.com/chrisguttandin/midi-player). It can also be encoded again as a binary MIDI file using the [json-midi-encoder](https://github.com/chrisguttandin/json-midi-encoder).
 
 ## Usage
 
