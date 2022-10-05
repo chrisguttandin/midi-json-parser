@@ -96,19 +96,19 @@ module.exports = (config) => {
                     base: 'SauceLabs',
                     browserName: 'chrome',
                     captureTimeout: 300,
-                    platform: 'macOS 11.00'
+                    platform: 'macOS 12'
                 },
                 FirefoxSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'firefox',
                     captureTimeout: 300,
-                    platform: 'macOS 11.00'
+                    platform: 'macOS 12'
                 },
                 SafariSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'safari',
                     captureTimeout: 300,
-                    platform: 'macOS 11.00'
+                    platform: 'macOS 12'
                 }
             },
 
