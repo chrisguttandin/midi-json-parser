@@ -99,10 +99,13 @@ module.exports = (config) => {
                     platform: 'macOS 12'
                 },
                 FirefoxSauceLabs: {
-                    base: 'SauceLabs',
-                    browserName: 'firefox',
-                    captureTimeout: 300,
-                    platform: 'macOS 12'
+                    'base': 'SauceLabs',
+                    'browserName': 'firefox',
+                    'captureTimeout': 300,
+                    'platform': 'macOS 12',
+                    'sauce:options': {
+                        geckodriverVersion: '0.30.0'
+                    }
                 },
                 SafariSauceLabs: {
                     base: 'SauceLabs',
@@ -113,7 +116,6 @@ module.exports = (config) => {
             },
 
             sauceLabs: {
-                geckodriverVersion: '0.30.0',
                 recordVideo: false
             }
         });
