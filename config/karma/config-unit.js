@@ -113,6 +113,7 @@ module.exports = (config) => {
             },
 
             sauceLabs: {
+                geckodriverVersion: '0.30.0',
                 recordVideo: false
             }
         });
