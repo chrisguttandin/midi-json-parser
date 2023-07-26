@@ -12,7 +12,7 @@
         "@babel/runtime": "^7.22.6",
         "midi-json-parser-broker": "^4.0.92",
         "midi-json-parser-worker": "^8.1.27",
-        "tslib": "^2.6.0"
+        "tslib": "^2.6.1"
     },
     "description": "This module is parsing midi files into a human-readable JSON object.",
     "devDependencies": {
