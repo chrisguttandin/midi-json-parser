@@ -15,7 +15,7 @@ jobs:
         strategy:
             matrix:
                 node-version: [20.x]
-                target: [chrome, safari]
+                target: [chrome, firefox]
                 type: [unit]
             max-parallel: 3
 
