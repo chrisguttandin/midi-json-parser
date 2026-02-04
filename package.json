@@ -16,7 +16,7 @@
     },
     "description": "This module is parsing midi files into a human-readable JSON object.",
     "devDependencies": {
-        "@babel/core": "^7.28.6",
+        "@babel/core": "^7.29.0",
         "@babel/plugin-external-helpers": "^7.27.1",
         "@babel/plugin-transform-runtime": "^7.28.5",
         "@babel/preset-env": "^7.28.6",
