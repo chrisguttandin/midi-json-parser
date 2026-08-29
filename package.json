@@ -59,6 +59,7 @@
     "main": "build/es5/bundle.js",
     "module": "build/es2019/module.js",
     "name": "midi-json-parser",
+    "packageManager": "npm@12",
     "repository": {
         "type": "git",
         "url": "https://github.com/chrisguttandin/midi-json-parser.git"
